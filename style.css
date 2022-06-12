@@ -1,0 +1,334 @@
+/* snap scroll */
+/*  */
+
+:root{
+  --vyellow: #F8D701;
+  --vgreen: #4D8B7C;
+  --vred: #CF470A;
+  --vorange: #F36B16;
+  --vblue: #80c1f0;
+  --vteal: #5ef4f2;
+  --vdarkblue: #267dbb;
+  --vlight: #f2f5f5;
+  --vlighter: #ffffff;
+  --vlesslight: #efefef;
+}
+
+body{
+  /* background video*/
+  background-color: var(--vlight);
+  overflow-x: hidden;
+}
+
+.selectable:hover {
+  cursor: pointer;
+}
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1000;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.video{
+  margin-top: 50px;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.aboutMe{
+  min-height: 80vh;
+  width: 100%;
+}
+
+.profileImg{
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  border-radius: 12px;
+  /* TODO study elevate */
+  width: 100%;
+  animation-duration: 2s;
+  animation-name: slideleft;
+}
+.profileFrame{
+  display: flex;
+  right: 10px;
+  /* justify-content: center;
+  align-items: center; */
+  border-radius: 8px;
+  animation-duration: 2.5s;
+  animation-name: slideleft;
+  background-color: var(--vdarkblue);
+  box-shadow:
+  12.1px 12.5px 14.7px rgba(0, 0, 0, 0.05),
+  97px 100px 117px rgba(0, 0, 0, 0.1)
+}
+
+.yBar{
+  height: 95%;
+  width: 3px;
+  background-color: var(--vblue);
+}
+.xBar{
+  width: 95%;
+  height: 3px;
+  background-color: var(--vblue);
+}
+
+
+.projects{
+  min-height: 100vh;
+}
+
+.projectCard{
+  display: flex;
+  justify-content: start;
+  height: fit-content;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+#onTrak{
+  background-color: #4f7269;
+}
+
+
+.whitespace.blue{
+  background-color: var(--vteal);
+  max-width: 95%;
+  animation-duration: 2s;
+  animation-name: slideright;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.whitespace.green{
+  background-color: var(--vgreen);
+  max-width: 95%;
+  /* animation-duration: 2s; */
+  /* animation-name: slideleft; */
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.whitespace.red{
+  background-color: var(--vred);
+  max-width: 100%;
+  /* overflow-y: hidden; */
+  /* animation: slidedown; */
+	/* animation-duration: .65s;
+	animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1); */
+  /* z-index: -1; */
+}
+
+#aboutMe {
+  overflow: hidden;
+  animation-duration: 2s;
+  border-radius: 4px; 
+}
+.link{
+  animation: fadeIn 4s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+}
+
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
+
+.langs{
+  z-index: 1;
+}
+.skills{
+  z-index: 1;
+  position: relative;
+}
+
+.skillBadges{
+  display: flex;
+  width: 100%;
+  max-height: 80vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.skillBadges > img{
+  object-fit: cover;
+  height: 17vw;
+  max-width: 100%;
+}
+
+.pop{
+  overflow: hidden;
+}
+
+.green-animation {
+  animation: slideleft 2s 1 cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.red-animation {
+  animation: dropdown .65s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+.pop-up {
+  animation: popUp 1s 1 cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+@media (max-width: 576px){
+  #aboutMe {
+    animation-name: slideright;
+    margin-top: 2rem;
+  }
+  .profileImg{
+    max-height: 40vh;
+  }
+  .whitespace{
+    height: 5vh
+  }
+  .whitespace.blue{
+    height: 10vh;
+  }
+  .whitespace.green{
+    height: 10vh;
+  }
+  .projectImg{
+    width: 100%;
+    top:  1rem;
+    left: 1rem;
+  } 
+  .skillBadges{
+    max-width: 90%;
+  }
+  .yBar{
+    height: 95%;
+  }
+  #projectDivider{
+    display: none;
+  }
+
+  
+}
+@media (min-width: 576px){
+  #aboutMe {
+    animation-name: slidedown;
+    margin-left: 3rem;
+  }
+  .link{
+    margin-left: 3rem;
+    margin-top: 0.75rem;
+  }
+  .profileImg{
+    max-height: 70vh;
+    top:  1.5rem;
+    left: 1.5rem;
+  }
+  .whitespace{
+    height: 10vh
+  }
+  .whitespace.blue{
+    height: 15vh;
+  }
+  .whitespace.green{
+    height: 15vh;
+  }
+  .whitespace.red{
+    height: 15vh;
+  }
+  .projectImg{
+    max-width: 100%;
+  }
+  
+}
+
+
+@keyframes slideleft {
+  from {
+    transform: translateX(-150%);
+    -webkit-transform: translateX(-150%);
+  }
+
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+}
+@keyframes slideright {
+  from {
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+}
+@keyframes slidedown {
+  0% {
+    transform: translateY(-150%);
+    -webkit-transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+  }
+}
+@keyframes dropdown {
+  0% {
+    max-height: 0vh;
+  }
+  100% {
+    max-height: 16vh;
+  }
+}
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100%{ opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes popUp{
+  0% {max-height: 0rem;}
+  100%{max-height: 3rem;}
+}
+
+@-moz-keyframes popUp {
+  0% {max-height: 0rem;}
+  100%{ max-height: 3rem;}
+}
+
+@-webkit-keyframes popUp {
+  0% {max-height: 0rem;}
+  100%{max-height: 3rem;}
+}

@@ -1,44 +1,191 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h5>Name</h5>
-          <!-- Cool video background -->
-        </div>
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <a href="#About Me">About Me</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h5>secret words for british eyes only</h5>
+        <!-- <div class="video"></div> -->
+        <div class="whitespace"></div>
+        <!-- Cool video background ... me nerf sword fighting? -->
       </div>
-      <div class="row">
-        <div class="col-12">
-          <h5>About Me</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h5>Projects</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <!-- Would be cool to have a card slide in from above -->
-          <h5>Contact</h5>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-11">
+        <div class="aboutMe">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="profileFrame">
+                <img id="profileImg" class="profileImg" src="./assets/MOI-resize.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="aboutMe">
+                <h5 class="">About Me</h5>
+                <div class="d-flex h-50 flex-column justify-content-center p-3 rounded"
+                  style="background-color: var(--vblue);">
+                  <p class="m-0"> I'm a full stack software developer fascinated with data: how to visualize it, make
+                    sense
+                    of it, and use it to solve problems and make connections. I have a background in History, the
+                    humanities and the arts, a love of philosophy and literature---but now, a new future in mathematics,
+                    science, and programming. With my skills in Vue3, ChartJS, and C#, I have experience across the
+                    whole
+                    stack, and projects that showcase my skills as both a leader and a creative. </p>
+                  <!-- throw an underline on hover -->
+                </div>
+              </div>
+              <p class="link p-2">Take a look.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  </div>
+  <div class="whitespace blue ms-auto d-flex align-items-end">
+    <h2 class="m-3">Projects</h2>
+  </div>
+  <div class="container-fluid projects">
+    <div class="row justify-content-center">
+      <div class="col-1 d-flex justify-content-center align-items-end">
+        <!-- parralax scroll on the bar to match scroll -->
+        <!-- <div class="yBar rounded"></div> -->
+      </div>
+      <div class="col-11" style="background-color: var(--vlighter);">
+        <div class="row justify-content-center align-items-center p-3">
+          <div class="col-md-5 projectCard">
+            <svg width="300" height="300" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M55.6302 1.73114C34.5269 6.31963 17.2254 19.5875 7.85834 38.3285C2.34832 49.4404 0.640213 56.7377 0.640213 69.5081C0.585113 79.7354 1.52182 85.2637 4.49723 93.2798C9.78685 107.432 20.311 120.7 31.9371 127.776L34.9677 129.601L37.2268 128.716C38.7145 128.108 40.1471 127.942 41.4695 128.163C44.9408 128.771 45.4367 129.269 45.4367 132.033C45.4367 134.355 45.5469 134.576 47.4203 135.35C48.4672 135.792 50.2855 136.235 51.3875 136.29L53.4262 136.401L54.2527 132.918C55.1894 128.882 56.7873 126.892 59.5975 126.394C62.1321 125.897 62.3525 126.339 62.7933 132.199C62.9586 134.797 63.2341 137.285 63.3994 137.727C63.73 138.778 80.0947 138.28 85.3844 137.009C111.943 130.651 132.771 108.427 137.509 81.3939C138.446 76.142 138.446 63.04 137.509 57.6222C134.368 39.4894 122.687 21.7436 107.149 11.6268C99.9308 6.92773 91.776 3.55548 83.1804 1.73114C76.5132 0.34906 62.0219 0.34906 55.6302 1.73114ZM76.5683 8.64151C90.9495 10.6317 101.639 15.773 111.888 25.6687C121.53 35.0115 127.812 47.1185 129.96 60.7734C131.062 67.739 131.062 71.6641 130.016 78.4086C127.316 95.1041 119.216 108.593 105.496 119.097C100.978 122.58 91.1148 127.389 85.4946 128.937C80.7009 130.209 70.4522 131.536 69.9012 130.983C69.6808 130.817 69.8461 125.952 70.2318 120.258C71.2236 104.447 71.3338 106.05 69.24 105.94C66.8156 105.829 66.3197 105.221 65.7687 102.014C65.1626 98.2 66.4299 95.7675 69.5155 94.6618C71.4991 93.9984 71.9399 93.5562 72.2154 92.1188C72.9317 88.3596 72.4358 87.4198 69.1298 86.3694C67.4768 85.8166 65.3279 84.9873 64.3361 84.4898C62.4627 83.4947 59.5424 80.3436 59.9832 79.846C60.1485 79.6802 61.9668 80.3436 64.0055 81.2834C68.9645 83.55 73.097 84.1581 79.5988 83.55C85.164 82.9971 89.2965 83.4394 96.4595 85.2637C103.237 86.9775 105.165 87.1434 109.353 86.093C115.083 84.7109 116.185 82.2785 113.596 76.8607C112.218 73.9307 107.645 69.8951 92.9331 58.7832C88.3047 55.3004 84.5579 52.1492 84.5579 51.8175C84.5579 51.4305 85.0538 50.7119 85.715 50.1038C86.3762 49.5509 87.4782 48.003 88.2496 46.6762C89.572 44.4649 89.6271 43.9121 89.2965 40.0423C89.1312 37.7204 88.7455 35.6196 88.47 35.3432C86.9823 33.8506 79.8192 38.8813 77.6703 42.917C76.2928 45.46 75.0255 45.46 73.2623 42.8617C72.1603 41.1479 71.8848 40.0975 71.8848 37.2781C71.8848 33.1872 70.9481 30.6441 68.8543 28.9856C66.9258 27.4377 65.2728 27.4377 63.3994 28.9304C61.4158 30.4783 61.526 32.7449 63.6198 35.1773C68.138 40.2634 67.9176 47.1738 63.4545 42.8064C62.4627 41.8113 60.8097 39.6 59.7628 37.8862C55.4649 30.5336 52.4344 28.1011 49.2937 29.4279C47.806 30.036 46.5387 31.9709 46.5387 33.6294C46.5387 35.6196 48.4672 37.7204 51.3324 38.8813C54.3078 40.0975 56.4567 42.143 56.4567 43.7462C56.4567 44.2438 55.5751 45.3494 54.4731 46.2339C53.3711 47.1185 51.9385 48.9981 51.2773 50.4907L50.01 53.1443L47.6958 50.7672C44.1694 47.1738 41.3042 45.9575 36.4554 45.9575C29.8984 45.9575 27.8597 47.3396 31.0004 49.7168C31.9922 50.4355 33.6453 53.089 35.4085 56.7377C38.439 62.9294 40.3675 64.9196 44.2796 65.6936C45.2714 65.9147 46.2081 66.357 46.3183 66.6887C46.4836 67.0756 44.9408 73.8202 42.9021 81.6703C38.2186 100.135 38.3839 98.9739 40.092 99.3609C42.5164 99.969 43.7286 102.346 44.8306 108.648C45.2163 110.639 45.1061 111.468 44.5551 112.076C43.6735 112.905 38.9349 113.679 36.0697 113.347C34.2514 113.182 34.0861 113.292 33.4249 115.504C32.9841 116.83 32.3228 117.881 31.9371 117.881C31.2208 117.881 24.7741 111.8 22.1844 108.648C12.9276 97.5366 7.30734 80.8411 8.18895 67.2968C9.34605 50.7672 14.7459 38.3285 25.821 26.7743C35.133 17.0445 47.9713 10.5211 61.4158 8.75208C68.8543 7.75699 69.9563 7.75699 76.5683 8.64151ZM59.9832 89.4652C60.5893 91.0132 60.3138 94.6618 59.5424 96.2098C58.0547 99.0292 55.6302 100.854 52.8752 101.13C50.4508 101.462 50.2855 101.351 47.9162 98.8633C46.5387 97.4813 45.4367 95.8228 45.4367 95.27C45.4367 93.6667 48.1366 90.792 50.6712 89.6311C53.5364 88.3043 59.4873 88.1937 59.9832 89.4652ZM63.0688 110.141C64.0055 111.965 64.8871 114.564 65.0524 115.891C65.383 117.991 65.2177 118.434 63.8402 119.76C61.6913 121.806 60.0383 122.58 56.5669 123.354C51.7732 124.349 49.8998 124.183 49.2386 122.635C48.4121 120.811 49.0733 116.72 50.561 114.453C51.663 112.85 59.8179 106.824 60.975 106.824C61.1954 106.824 62.1321 108.317 63.0688 110.141Z"
+                fill="#FFD464" />
+            </svg>
+          </div>
+          <div id="onTrak" class="col-md-5 projectCard rounded">
+            <img class="projectImg" src="./assets/IMG_0519.PNG" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div id="projectDivider" class="xBar align-self-center"></div>
+        </div>
+        <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-md-5 projectCard">
+            <svg width="250" height="250" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 3.03741C12.3511 3.03741 3 12.2495 3 23.5C3 34.7505 12.3511 43.9626 24 43.9626C35.6489 43.9626 45 34.7505 45 23.5C45 21.0196 44.5477 18.6449 43.7198 16.4478L45.6522 13.6214C46.0174 14.1496 46.2518 14.675 46.5 15.3469C47.422 17.8434 48 20.6956 48 23.5C48 36.5294 37.2039 47 24 47C10.7961 47 0 36.5294 0 23.5C0 10.4706 10.7961 0 24 0C25.5091 0 26.987 0.136548 28.4211 0.398119C29.0526 0.513316 31.1945 1.07204 31.8261 1.4717L29.2174 3.58468C27.9267 3.34285 25.3657 3.03741 24 3.03741Z"
+                fill="url(#paint0_linear_18_128)" />
+              <path d="M13.914 30.6386L25.4097 19.1429L27.4438 21.1755L15.9466 32.6712L13.914 30.6386Z"
+                fill="url(#paint1_linear_18_128)" />
+              <path
+                d="M27.875 40.2813C27.6929 40.2818 27.5124 40.2476 27.3431 40.1807C27.1076 40.0868 26.9011 39.9323 26.7446 39.7329C26.5881 39.5335 26.4871 39.2962 26.4519 39.0451L25.0144 28.9826L27.8894 28.5801L28.9675 36.1557L33.625 32.4038V21.5938C33.6239 21.4047 33.6602 21.2171 33.7317 21.042C33.8032 20.8668 33.9086 20.7075 34.0419 20.5732L39.8925 14.7226C41.098 13.5252 42.0542 12.1007 42.7056 10.5314C43.357 8.9621 43.6907 7.27921 43.6875 5.58009V2.90634H41.0137C39.3146 2.90311 37.6317 3.23685 36.0624 3.88826C34.4931 4.53966 33.0686 5.4958 31.8712 6.70134L26.0206 12.552C25.8863 12.6852 25.727 12.7906 25.5519 12.8621C25.3767 12.9337 25.1892 12.9699 25 12.9688H14.19L10.4381 17.6551L18.0137 18.7332L17.6112 21.6082L7.54874 20.1707C7.29767 20.1355 7.06038 20.0345 6.86093 19.878C6.66149 19.7215 6.50699 19.515 6.41311 19.2795C6.31807 19.0423 6.28794 18.7841 6.32584 18.5315C6.36374 18.2788 6.46829 18.0408 6.62874 17.842L12.3787 10.6545C12.5112 10.4824 12.6808 10.3426 12.875 10.2455C13.0692 10.1484 13.2829 10.0965 13.5 10.0938H24.4106L29.83 4.66009C31.295 3.1868 33.038 2.01902 34.9578 1.22445C36.8776 0.429882 38.936 0.0243398 41.0137 0.0313391H43.6875C44.45 0.0313391 45.1813 0.33424 45.7204 0.873407C46.2596 1.41257 46.5625 2.14384 46.5625 2.90634V5.58009C46.5695 7.65781 46.1639 9.71624 45.3694 11.636C44.5748 13.5558 43.407 15.2988 41.9337 16.7638L36.5 22.1832V33.0938C36.499 33.3098 36.4494 33.5227 36.3548 33.7168C36.2602 33.9109 36.1232 34.0812 35.9537 34.2151L28.7662 39.9651C28.5133 40.168 28.1992 40.2795 27.875 40.2813Z"
+                fill="url(#paint2_linear_18_128)" />
+              <defs>
+                <linearGradient id="paint0_linear_18_128" x1="-7.40741" y1="18.2778" x2="53.885" y2="10.4154"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9429C7" />
+                  <stop offset="1" stop-color="#C729C0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_18_128" x1="11.8261" y1="24.4039" x2="29.114" y2="22.2322"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9429C7" />
+                  <stop offset="1" stop-color="#C729C0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_18_128" x1="0.0981091" y1="15.6841" x2="51.5319" y2="9.22337"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9429C7" />
+                  <stop offset="1" stop-color="#C729C0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="col-md-5 projectCard">
+            <img class="projectImg rounded" src="./assets/allspice-headline.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="whitespace green justify-content-end align-items-end me-auto d-flex">
+    <h2 class="m-3">Languages</h2>
+  </div>
+  <div class="container-fluid langs">
+    <div class="row justify-content-center">
+      <div class="col-md-11 g-0 d-flex justify-content-center" style="background-color: var(--vlighter);">
+        <div class="skillBadges">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+            alt="">
+          <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png" alt="">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+            alt="">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+            alt="">
+          <img src="https://vuejs.org/images/logo.png" alt="">
+          <img src="" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="">
+          <img src="https://scicoding.com/content/images/2021/09/chartjs-logo-1.svg" alt="" title="ChartJS">
+          <img src="https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png" alt="">
+          <img src="https://www.unixmen.com/wp-content/uploads/2017/07/postgresql-logo.png" alt="">
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+  <div class="whitespace red justify-content-end align-items-end me-auto d-flex">
+    <h2 class="m-3 pop">Skills</h2>
+  </div>
+  <div class="container-fluid g-0 skills">
+    <p>Powerpoint, Excel, Scrum, </p>
+  </div>
+  <div class="container-fluid contact" style="background-color: var(--vlighter);">
+    <div class="row">
+      <div class="col-12">
+        <div class="p-3">
+          <div class="d-flex flex-column">
+            <h2 class="pop">Want to reach me?</h2>
+            <a href="tel: 208-850-1136">(208) 850-1136</a>
+            <a href="dacade.code@gmail.com">dacade.code@gmail.com</a>
+            <a href="github.com/da-cade/">github.com/da-cade/</a>
+            <a href="linkedin.com/in/dylan-cade">linkedin.com/in/dylan-cade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="whitespace"></div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
