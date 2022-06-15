@@ -10,11 +10,13 @@
   <!-- Bootstrap CSS v5.2.0-beta1 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Inter&family=Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="">
   <header>
     <div id="navbar">
       <a href="#About Me">About Me</a>
@@ -22,51 +24,35 @@
       <a href="#Contact">Contact</a>
     </div>
   </header>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-10">
-        <h5>secret words for british eyes only</h5>
-        <!-- <div class="video"></div> -->
-        <div class="whitespace"></div>
-        <!-- Cool video background ... me nerf sword fighting? -->
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-11">
-        <div class="aboutMe">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="profileFrame">
-                <img id="profileImg" class="profileImg" src="./assets/MOI-resize.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div id="aboutMe">
-                <h5 class="">About Me</h5>
-                <div class="d-flex h-50 flex-column justify-content-center p-3 rounded"
-                  style="background-color: var(--vblue);">
-                  <p class="m-0"> I'm a full stack software developer fascinated with data: how to visualize it, make
-                    sense
-                    of it, and use it to solve problems and make connections. I have a background in History, the
-                    humanities and the arts, a love of philosophy and literature---but now, a new future in mathematics,
-                    science, and programming. With my skills in Vue3, ChartJS, and C#, I have experience across the
-                    whole
-                    stack, and projects that showcase my skills as both a leader and a creative. </p>
-                  <!-- throw an underline on hover -->
-                </div>
-              </div>
-              <p class="link p-2">Take a look.</p>
-            </div>
-          </div>
 
+  <div class="container-fluid aboutMe">
+    <div class="row h-100" style="position: relative;">
+      <div class="col-md-7 g-0 moi"></div>
+      <div class="notMoi col-md-5 d-flex flex-column justify-content-around">
+        <div class="nametag">
+          <h1>Dylan Cade</h1>
+        </div>
+        <div id="aboutMe">
+          <h3 class="">About Me</h3>
+          <div class="d-flex flex-column justify-content-center p-3 rounded bg-gradient">
+            <p class="m-0"> I'm a full stack software developer fascinated with data: how to visualize it, make
+              sense
+              of it, and use it to solve problems and make connections. I have a background in History, the
+              humanities and the arts, a love of philosophy and literature---but now, a new future in mathematics,
+              science, and programming. With my skills in Vue3, ChartJS, and C#, I have experience across the
+              whole
+              stack, and projects that showcase my skills as both a leader and a creative. </p>
+            <!-- throw an underline on hover -->
+          </div>
+          <div class="d-flex justify-content-end selectable">
+            <p class="link p-2">Take a look.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="whitespace blue ms-auto d-flex align-items-end">
-    <h2 class="m-3">Projects</h2>
+    <h2 class="m-3 pop1">Projects</h2>
   </div>
   <div class="container-fluid projects">
     <div class="row justify-content-center">
@@ -156,27 +142,58 @@
     </div>
   </div>
   <div class="whitespace red justify-content-end align-items-end me-auto d-flex">
-    <h2 class="m-3 pop">Skills</h2>
+    <h2 class="m-3 pop2">Skills</h2>
   </div>
-  <div class="container-fluid g-0 skills">
-    <p>Powerpoint, Excel, Scrum, </p>
+  <div class="moBadges">
+    <div class="">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg"
+        alt="">
+      <h3>Powerpoint</h3>
+    </div>
+    <div class="">
+      <img src="https://www.mileagewise.com/wp-content/uploads/2021/11/excel_inverz_logo.png" alt="">
+      <h3>Excel</h3>
+    </div>
+    <div class="">
+      <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="">
+      <h3>Scrum</h3>
+    </div>
+  </div>
+  <div>
+
+  </div>
+  <div class="seeAlso d-flex justify-content-around">
+    <h3>🔍 Research</h3>
+    <h3>📆 Organization</h3>
+    <h3>🥊 Resourcefulness</h3>
+    <h3>🎨 Design</h3>
+    <h3>📰 Editing</h3>
+    <h3>💡 Innovation</h3>
   </div>
   <div class="container-fluid contact" style="background-color: var(--vlighter);">
-    <div class="row">
-      <div class="col-12">
-        <div class="p-3">
-          <div class="d-flex flex-column">
-            <h2 class="pop">Want to reach me?</h2>
-            <a href="tel: 208-850-1136">(208) 850-1136</a>
-            <a href="dacade.code@gmail.com">dacade.code@gmail.com</a>
-            <a href="github.com/da-cade/">github.com/da-cade/</a>
-            <a href="linkedin.com/in/dylan-cade">linkedin.com/in/dylan-cade</a>
+    <div class="row" style="background-color: var(--vlight)">
+      <div class="col-md-8 gs-0 moiCool"></div>
+      <div class="col-md-4 d-flex justify-content-center" style="background-color: var(--vlight)">
+        <div class="mt-5 w-100 p-1">
+          <h3 class="mb-5 mt-4 text-center">Want to reach me?</h3>
+          <div class="d-flex flex-column align-items-center rounded" style="background-color: var(--vgray)">
+            <div class="contactLinks rounded">
+              <p class="d-flex align-items-center"><i class="mdi mdi-phone me-2"></i><a href="tel: 208-850-1136">(208)
+                  850-1136</a></p>
+              <p class="d-flex align-items-center"><i class="mdi mdi-email me-2"></i><a
+                  href="mailto: https://dacade.code@gmail.com">dacade.code@gmail.com</a></p>
+              <p class="d-flex align-items-center"><i class="mdi mdi-github me-2"></i><a
+                  href="https://github.com/da-cade/">github.com/da-cade/</a></p>
+              <p class="d-flex align-items-center"><i class="mdi mdi-linkedin me-2"></i><a
+                  href="https://linkedin.com/in/dylan-cade">linkedin.com/in/dylan-cade</a></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="whitespace"></div>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
