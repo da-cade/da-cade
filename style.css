@@ -22,10 +22,15 @@
   src: url("https://fonts.googleapis.com/css2?family=Quicksand");
 }
 
+
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--vlight);
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 h1{
@@ -64,7 +69,7 @@ a{
 
 #navbar {
   background-color: #333;
-  position: fixed; 
+  position: fixed;
   top: 0; 
   width: 100%; 
   transition: top 0.3s; 
@@ -73,7 +78,7 @@ a{
 
 #navbar a {
   float: left;
-  display: block;
+  display: none;
   color: white;
   text-align: center;
   padding: 15px;
@@ -83,6 +88,11 @@ a{
 #navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+#navbar>a>svg{
+  height: 30px;
+  color: white;
 }
 
 .bg-gradient{
@@ -114,7 +124,7 @@ a{
 }
 
 .moi{
-  background-image: linear-gradient(to bottom, rgba(255, 255, 241, 0.5), rgba(245, 245, 255, 0.5)), url(./assets/MOI-resize1.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 241, 0.112), rgba(245, 245, 255, 0.084)), url(./assets/MOI-resize1.jpg);
   background-position: 0px 40px; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -125,7 +135,7 @@ a{
 
 .moiCool{
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 241, 0.5), rgba(245, 245, 255, 0.5)), url(./assets/coolboi.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 241, 0.227), rgba(245, 245, 255, 0.155)), url(./assets/coolboi.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -297,9 +307,9 @@ a:-webkit-any-link {
 
 
 
-.slide-right-animation{
+/* .slide-right-animation{
   animation: slideleft 1.5s 1 ease-in-out;
-}
+} */
 
 .green-animation {
   animation: slideleft 2s 1 cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -312,10 +322,18 @@ a:-webkit-any-link {
 }
 
 @media (max-width: 576px){
+  .display-mobile{
+    display: block!important;
+  }
+  #navbar{
+    display: flex;
+    justify-content: space-between;
+  }
   .nametag{
     position: absolute;
     left: 20px;
     top: 60px;
+    color: var(--vpurple)
   }
   #aboutMe {
     animation-name: slideright;
@@ -369,6 +387,9 @@ a:-webkit-any-link {
   
 }
 @media (min-width: 576px){
+  .display-desktop{
+    display: block!important;
+  }
   .nametag{
     margin-top: 5rem;
     margin-left: 3rem;
