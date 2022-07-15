@@ -1,5 +1,5 @@
 ### Hi there 👋
-I'm Dylan, a full stack developer with a background in the humanities 👴  ENTJ-A
+I'm Dylan, a full stack developer with a background in the humanities 👴 ENTJ-A  
 For the moment I'm still pretty new to the world of programming, but already I can tell that I'm into...  
 > Algorithms ➗  
 > Data Visualization 📊  
