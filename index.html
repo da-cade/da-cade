@@ -1,244 +1,873 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Bootstrap CSS v5.2.0-beta1 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Inter&family=Permanent+Marker" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Meet Dylan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
-<body class="">
-  <header>
-    <div id="navbar">
-      <a class="display-mobile" href="#about-moi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M480 179.6C498.6 188.4 512 212.1 512 240C512 267.9 498.6 291.6 480 300.4V448C480 460.9 472.2 472.6 460.2 477.6C448.3 482.5 434.5 479.8 425.4 470.6L381.7 426.1C333.7 378.1 268.6 352 200.7 352H192V480C192 497.7 177.7 512 160 512H96C78.33 512 64 497.7 64 480V352C28.65 352 0 323.3 0 288V192C0 156.7 28.65 128 64 128H200.7C268.6 128 333.7 101 381.7 53.02L425.4 9.373C434.5 .2215 448.3-2.516 460.2 2.437C472.2 7.39 480 19.06 480 32V179.6zM200.7 192H192V288H200.7C280.5 288 357.2 317.8 416 371.3V108.7C357.2 162.2 280.5 192 200.7 192V192z" />
-        </svg></a>
-      <a class="display-desktop" href="#about-moi">About Me</a>
-      <a class="display-mobile" href="#projects"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M0 80C0 53.49 21.49 32 48 32H144C170.5 32 192 53.49 192 80V96H384V80C384 53.49 405.5 32 432 32H528C554.5 32 576 53.49 576 80V176C576 202.5 554.5 224 528 224H432C405.5 224 384 202.5 384 176V160H192V176C192 177.7 191.9 179.4 191.7 180.1L272 288H368C394.5 288 416 309.5 416 336V432C416 458.5 394.5 480 368 480H272C245.5 480 224 458.5 224 432V336C224 334.3 224.1 332.6 224.3 331L144 224H48C21.49 224 0 202.5 0 176V80z" />
-        </svg></a>
-      <a class="display-desktop" href="#projects">Projects</a>
-      <a class="display-mobile" href="#langs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M448 164C459 164 468 172.1 468 184V188H528C539 188 548 196.1 548 208C548 219 539 228 528 228H526L524.4 232.5C515.5 256.1 501.9 279.1 484.7 297.9C485.6 298.4 486.5 298.1 487.4 299.5L506.3 310.8C515.8 316.5 518.8 328.8 513.1 338.3C507.5 347.8 495.2 350.8 485.7 345.1L466.8 333.8C462.4 331.1 457.1 328.3 453.7 325.3C443.2 332.8 431.8 339.3 419.8 344.7L416.1 346.3C406 350.8 394.2 346.2 389.7 336.1C385.2 326 389.8 314.2 399.9 309.7L403.5 308.1C409.9 305.2 416.1 301.1 422 298.3L409.9 286.1C402 278.3 402 265.7 409.9 257.9C417.7 250 430.3 250 438.1 257.9L452.7 272.4L453.3 272.1C465.7 259.9 475.8 244.7 483.1 227.1H376C364.1 227.1 356 219 356 207.1C356 196.1 364.1 187.1 376 187.1H428V183.1C428 172.1 436.1 163.1 448 163.1L448 164zM160 233.2L179 276H140.1L160 233.2zM0 128C0 92.65 28.65 64 64 64H576C611.3 64 640 92.65 640 128V384C640 419.3 611.3 448 576 448H64C28.65 448 0 419.3 0 384V128zM320 384H576V128H320V384zM178.3 175.9C175.1 168.7 167.9 164 160 164C152.1 164 144.9 168.7 141.7 175.9L77.72 319.9C73.24 329.1 77.78 341.8 87.88 346.3C97.97 350.8 109.8 346.2 114.3 336.1L123.2 315.1H196.8L205.7 336.1C210.2 346.2 222 350.8 232.1 346.3C242.2 341.8 246.8 329.1 242.3 319.9L178.3 175.9z" />
-        </svg></a>
-      <a class="display-desktop" href="#langs">Languages</a>
-      <a class="display-mobile" href="#skillz"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M223.7 130.8L149.1 7.77C147.1 2.949 141.9 0 136.3 0H16.03c-12.95 0-20.53 14.58-13.1 25.18l111.3 158.9C143.9 156.4 181.7 137.3 223.7 130.8zM256 160c-97.25 0-176 78.75-176 176S158.8 512 256 512s176-78.75 176-176S353.3 160 256 160zM348.5 317.3l-37.88 37l8.875 52.25c1.625 9.25-8.25 16.5-16.63 12l-46.88-24.62L209.1 418.5c-8.375 4.5-18.25-2.75-16.63-12l8.875-52.25l-37.88-37C156.6 310.6 160.5 299 169.9 297.6l52.38-7.625L245.7 242.5c2-4.25 6.125-6.375 10.25-6.375S264.2 238.3 266.2 242.5l23.5 47.5l52.38 7.625C351.6 299 355.4 310.6 348.5 317.3zM495.1 0H375.7c-5.621 0-10.83 2.949-13.72 7.77l-73.76 122.1c42 6.5 79.88 25.62 109.5 53.38l111.3-158.9C516.5 14.58 508.9 0 495.1 0z" />
-        </svg></a>
-      <a class="display-desktop" href="#skillz">Skills</a>
-      <a class="display-mobile" href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z" />
-        </svg></a>
-      <a class="display-desktop" href="#contact">Contact</a>
-    </div>
-  </header>
+<body>
 
-  <div id="about-moi" class="container-fluid aboutMe">
-    <div class="row h-100" style="position: relative;">
-      <div class="col-md-7 g-0 moi"></div>
-      <div class="notMoi col-md-5 d-flex flex-column justify-content-around">
-        <div class="nametag">
-          <h1>Dylan Cade</h1>
-        </div>
-        <div id="aboutMe">
-          <h3 class="">About Me</h3>
-          <div class="d-flex flex-column justify-content-center p-3 rounded bg-gradient">
-            <p class="m-0"> I'm a full stack software developer who loves front-end development and data science. I have
-              a background in History, the humanities and the arts, and a love of philosophy and literature —— and now,
-              a new passion for mathematics,
-              science, programming, design, and development. With my skills in Vue3, ChartJS, and C#, I have experience
-              across the
-              whole stack, and projects that showcase my skills as both a leader and a creative. </p>
-            <!-- throw an underline on hover -->
-          </div>
-          <div class="d-flex justify-content-end selectable">
-            <a href="#projects">
-              <p class="link p-2">Take a look.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="projects" class="whitespace blue ms-auto d-flex align-items-end">
-    <h2 class="m-3 pop1">Projects</h2>
-  </div>
-  <div class="container-fluid projects">
-    <div class="row justify-content-center">
-      <div class="col-1 d-flex justify-content-center align-items-end">
-        <!-- parralax scroll on the bar to match scroll -->
-        <!-- <div class="yBar rounded"></div> -->
-      </div>
-      <div class="col-11" style="background-color: var(--vlighter);">
-        <div class="row justify-content-center align-items-center p-3">
-          <div class="col-md-5 projectCard">
-            <a target="blank" href="https://tower-dcade.herokuapp.com/#/">
-              <svg width="300" height="300" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M55.6302 1.73114C34.5269 6.31963 17.2254 19.5875 7.85834 38.3285C2.34832 49.4404 0.640213 56.7377 0.640213 69.5081C0.585113 79.7354 1.52182 85.2637 4.49723 93.2798C9.78685 107.432 20.311 120.7 31.9371 127.776L34.9677 129.601L37.2268 128.716C38.7145 128.108 40.1471 127.942 41.4695 128.163C44.9408 128.771 45.4367 129.269 45.4367 132.033C45.4367 134.355 45.5469 134.576 47.4203 135.35C48.4672 135.792 50.2855 136.235 51.3875 136.29L53.4262 136.401L54.2527 132.918C55.1894 128.882 56.7873 126.892 59.5975 126.394C62.1321 125.897 62.3525 126.339 62.7933 132.199C62.9586 134.797 63.2341 137.285 63.3994 137.727C63.73 138.778 80.0947 138.28 85.3844 137.009C111.943 130.651 132.771 108.427 137.509 81.3939C138.446 76.142 138.446 63.04 137.509 57.6222C134.368 39.4894 122.687 21.7436 107.149 11.6268C99.9308 6.92773 91.776 3.55548 83.1804 1.73114C76.5132 0.34906 62.0219 0.34906 55.6302 1.73114ZM76.5683 8.64151C90.9495 10.6317 101.639 15.773 111.888 25.6687C121.53 35.0115 127.812 47.1185 129.96 60.7734C131.062 67.739 131.062 71.6641 130.016 78.4086C127.316 95.1041 119.216 108.593 105.496 119.097C100.978 122.58 91.1148 127.389 85.4946 128.937C80.7009 130.209 70.4522 131.536 69.9012 130.983C69.6808 130.817 69.8461 125.952 70.2318 120.258C71.2236 104.447 71.3338 106.05 69.24 105.94C66.8156 105.829 66.3197 105.221 65.7687 102.014C65.1626 98.2 66.4299 95.7675 69.5155 94.6618C71.4991 93.9984 71.9399 93.5562 72.2154 92.1188C72.9317 88.3596 72.4358 87.4198 69.1298 86.3694C67.4768 85.8166 65.3279 84.9873 64.3361 84.4898C62.4627 83.4947 59.5424 80.3436 59.9832 79.846C60.1485 79.6802 61.9668 80.3436 64.0055 81.2834C68.9645 83.55 73.097 84.1581 79.5988 83.55C85.164 82.9971 89.2965 83.4394 96.4595 85.2637C103.237 86.9775 105.165 87.1434 109.353 86.093C115.083 84.7109 116.185 82.2785 113.596 76.8607C112.218 73.9307 107.645 69.8951 92.9331 58.7832C88.3047 55.3004 84.5579 52.1492 84.5579 51.8175C84.5579 51.4305 85.0538 50.7119 85.715 50.1038C86.3762 49.5509 87.4782 48.003 88.2496 46.6762C89.572 44.4649 89.6271 43.9121 89.2965 40.0423C89.1312 37.7204 88.7455 35.6196 88.47 35.3432C86.9823 33.8506 79.8192 38.8813 77.6703 42.917C76.2928 45.46 75.0255 45.46 73.2623 42.8617C72.1603 41.1479 71.8848 40.0975 71.8848 37.2781C71.8848 33.1872 70.9481 30.6441 68.8543 28.9856C66.9258 27.4377 65.2728 27.4377 63.3994 28.9304C61.4158 30.4783 61.526 32.7449 63.6198 35.1773C68.138 40.2634 67.9176 47.1738 63.4545 42.8064C62.4627 41.8113 60.8097 39.6 59.7628 37.8862C55.4649 30.5336 52.4344 28.1011 49.2937 29.4279C47.806 30.036 46.5387 31.9709 46.5387 33.6294C46.5387 35.6196 48.4672 37.7204 51.3324 38.8813C54.3078 40.0975 56.4567 42.143 56.4567 43.7462C56.4567 44.2438 55.5751 45.3494 54.4731 46.2339C53.3711 47.1185 51.9385 48.9981 51.2773 50.4907L50.01 53.1443L47.6958 50.7672C44.1694 47.1738 41.3042 45.9575 36.4554 45.9575C29.8984 45.9575 27.8597 47.3396 31.0004 49.7168C31.9922 50.4355 33.6453 53.089 35.4085 56.7377C38.439 62.9294 40.3675 64.9196 44.2796 65.6936C45.2714 65.9147 46.2081 66.357 46.3183 66.6887C46.4836 67.0756 44.9408 73.8202 42.9021 81.6703C38.2186 100.135 38.3839 98.9739 40.092 99.3609C42.5164 99.969 43.7286 102.346 44.8306 108.648C45.2163 110.639 45.1061 111.468 44.5551 112.076C43.6735 112.905 38.9349 113.679 36.0697 113.347C34.2514 113.182 34.0861 113.292 33.4249 115.504C32.9841 116.83 32.3228 117.881 31.9371 117.881C31.2208 117.881 24.7741 111.8 22.1844 108.648C12.9276 97.5366 7.30734 80.8411 8.18895 67.2968C9.34605 50.7672 14.7459 38.3285 25.821 26.7743C35.133 17.0445 47.9713 10.5211 61.4158 8.75208C68.8543 7.75699 69.9563 7.75699 76.5683 8.64151ZM59.9832 89.4652C60.5893 91.0132 60.3138 94.6618 59.5424 96.2098C58.0547 99.0292 55.6302 100.854 52.8752 101.13C50.4508 101.462 50.2855 101.351 47.9162 98.8633C46.5387 97.4813 45.4367 95.8228 45.4367 95.27C45.4367 93.6667 48.1366 90.792 50.6712 89.6311C53.5364 88.3043 59.4873 88.1937 59.9832 89.4652ZM63.0688 110.141C64.0055 111.965 64.8871 114.564 65.0524 115.891C65.383 117.991 65.2177 118.434 63.8402 119.76C61.6913 121.806 60.0383 122.58 56.5669 123.354C51.7732 124.349 49.8998 124.183 49.2386 122.635C48.4121 120.811 49.0733 116.72 50.561 114.453C51.663 112.85 59.8179 106.824 60.975 106.824C61.1954 106.824 62.1321 108.317 63.0688 110.141Z"
-                  fill="#FFD464" />
-              </svg>
-            </a>
-          </div>
-          <div id="onTrak" class="col-md-5 projectCard rounded">
-            <a target="blank" href="https://ontrak-capstone.herokuapp.com/">
-              <img class="projectImg" src="./assets/IMG_0519.PNG" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <div id="projectDivider" class="xBar align-self-center"></div>
-        </div>
-        <div class="row justify-content-center align-items-center mb-4">
-          <div class="col-md-5 projectCard">
-            <a target="blank" href="https://planit-scrum.herokuapp.com/">
-              <svg width="250" height="250" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24 3.03741C12.3511 3.03741 3 12.2495 3 23.5C3 34.7505 12.3511 43.9626 24 43.9626C35.6489 43.9626 45 34.7505 45 23.5C45 21.0196 44.5477 18.6449 43.7198 16.4478L45.6522 13.6214C46.0174 14.1496 46.2518 14.675 46.5 15.3469C47.422 17.8434 48 20.6956 48 23.5C48 36.5294 37.2039 47 24 47C10.7961 47 0 36.5294 0 23.5C0 10.4706 10.7961 0 24 0C25.5091 0 26.987 0.136548 28.4211 0.398119C29.0526 0.513316 31.1945 1.07204 31.8261 1.4717L29.2174 3.58468C27.9267 3.34285 25.3657 3.03741 24 3.03741Z"
-                  fill="url(#paint0_linear_18_128)" />
-                <path d="M13.914 30.6386L25.4097 19.1429L27.4438 21.1755L15.9466 32.6712L13.914 30.6386Z"
-                  fill="url(#paint1_linear_18_128)" />
-                <path
-                  d="M27.875 40.2813C27.6929 40.2818 27.5124 40.2476 27.3431 40.1807C27.1076 40.0868 26.9011 39.9323 26.7446 39.7329C26.5881 39.5335 26.4871 39.2962 26.4519 39.0451L25.0144 28.9826L27.8894 28.5801L28.9675 36.1557L33.625 32.4038V21.5938C33.6239 21.4047 33.6602 21.2171 33.7317 21.042C33.8032 20.8668 33.9086 20.7075 34.0419 20.5732L39.8925 14.7226C41.098 13.5252 42.0542 12.1007 42.7056 10.5314C43.357 8.9621 43.6907 7.27921 43.6875 5.58009V2.90634H41.0137C39.3146 2.90311 37.6317 3.23685 36.0624 3.88826C34.4931 4.53966 33.0686 5.4958 31.8712 6.70134L26.0206 12.552C25.8863 12.6852 25.727 12.7906 25.5519 12.8621C25.3767 12.9337 25.1892 12.9699 25 12.9688H14.19L10.4381 17.6551L18.0137 18.7332L17.6112 21.6082L7.54874 20.1707C7.29767 20.1355 7.06038 20.0345 6.86093 19.878C6.66149 19.7215 6.50699 19.515 6.41311 19.2795C6.31807 19.0423 6.28794 18.7841 6.32584 18.5315C6.36374 18.2788 6.46829 18.0408 6.62874 17.842L12.3787 10.6545C12.5112 10.4824 12.6808 10.3426 12.875 10.2455C13.0692 10.1484 13.2829 10.0965 13.5 10.0938H24.4106L29.83 4.66009C31.295 3.1868 33.038 2.01902 34.9578 1.22445C36.8776 0.429882 38.936 0.0243398 41.0137 0.0313391H43.6875C44.45 0.0313391 45.1813 0.33424 45.7204 0.873407C46.2596 1.41257 46.5625 2.14384 46.5625 2.90634V5.58009C46.5695 7.65781 46.1639 9.71624 45.3694 11.636C44.5748 13.5558 43.407 15.2988 41.9337 16.7638L36.5 22.1832V33.0938C36.499 33.3098 36.4494 33.5227 36.3548 33.7168C36.2602 33.9109 36.1232 34.0812 35.9537 34.2151L28.7662 39.9651C28.5133 40.168 28.1992 40.2795 27.875 40.2813Z"
-                  fill="url(#paint2_linear_18_128)" />
-                <defs>
-                  <linearGradient id="paint0_linear_18_128" x1="-7.40741" y1="18.2778" x2="53.885" y2="10.4154"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9429C7" />
-                    <stop offset="1" stop-color="#C729C0" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_18_128" x1="11.8261" y1="24.4039" x2="29.114" y2="22.2322"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9429C7" />
-                    <stop offset="1" stop-color="#C729C0" />
-                  </linearGradient>
-                  <linearGradient id="paint2_linear_18_128" x1="0.0981091" y1="15.6841" x2="51.5319" y2="9.22337"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9429C7" />
-                    <stop offset="1" stop-color="#C729C0" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-          </div>
-          <div class="col-md-5 projectCard">
-            <a target="blank" href="https://allspice.herokuapp.com/#/">
-              <img class="projectImg rounded" src="./assets/allspice-headline.PNG" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="langs" class="whitespace green justify-content-end align-items-end me-auto d-flex">
-    <h2 class="m-3">Languages</h2>
-  </div>
-  <div class="container-fluid langs">
-    <div class="row justify-content-center">
-      <div class="col-md-11 g-0 d-flex justify-content-center" style="background-color: var(--vlighter);">
-        <div class="skillBadges">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
-            alt="">
-          <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png" alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
-            alt="">
-          <img src="https://vuejs.org/images/logo.png" alt="">
-          <img src="" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="">
-          <img src="https://scicoding.com/content/images/2021/09/chartjs-logo-1.svg" alt="" title="ChartJS">
-          <img src="https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png" alt="">
-          <img src="https://www.unixmen.com/wp-content/uploads/2017/07/postgresql-logo.png" alt="">
-        </div>
-      </div>
-      <div class="col-1"></div>
-    </div>
-  </div>
-  <div id="skillz" class="whitespace red justify-content-end align-items-end me-auto d-flex">
-    <h2 class="m-3 pop2">Skills</h2>
-  </div>
-  <div class="moBadges">
-    <div class="">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg"
-        alt="">
-      <h3>Powerpoint</h3>
-    </div>
-    <div class="">
-      <img src="https://www.mileagewise.com/wp-content/uploads/2021/11/excel_inverz_logo.png" alt="">
-      <h3>Excel</h3>
-    </div>
-    <div class="">
-      <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="">
-      <h3>Scrum</h3>
-    </div>
-  </div>
-  <div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
 
-  </div>
-  <div class="seeAlso d-flex justify-content-around">
-    <h3>🔍 Research</h3>
-    <h3>📆 Organization</h3>
-    <h3>🥊 Resourcefulness</h3>
-    <h3>🎨 Design</h3>
-    <h3>📰 Editing</h3>
-    <h3>💡 Innovation</h3>
-  </div>
-  <div id="contact" class="container-fluid contact" style="background-color: var(--vlighter);">
-    <div class="row" style="background-color: var(--vlight)">
-      <div class="col-md-8 gs-0 moiCool"></div>
-      <div class="col-md-4 d-flex justify-content-center" style="background-color: var(--vlight)">
-        <div class="mt-5 w-100 p-1">
-          <h3 class="mb-5 mt-4 text-center">Want to reach me?</h3>
-          <div class="d-flex flex-column align-items-center rounded" style="background-color: var(--vgray)">
-            <div class="contactLinks rounded">
-              <p class="d-flex align-items-center"><i class="mdi mdi-phone me-2"></i><a href="tel: 208-850-1136">(208)
-                  850-1136</a></p>
-              <p class="d-flex align-items-center"><i class="mdi mdi-email me-2"></i><a
-                  href="mailto: https://dacade.code@gmail.com">dacade.code@gmail.com</a></p>
-              <p class="d-flex align-items-center"><i class="mdi mdi-github me-2"></i><a
-                  href="https://github.com/da-cade/">github.com/da-cade/</a></p>
-              <p class="d-flex align-items-center"><i class="mdi mdi-linkedin me-2"></i><a
-                  href="https://linkedin.com/in/dylan-cade">linkedin.com/in/dylan-cade</a></p>
+      <h1><a href="index.html">Dylan Cade</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>Full Stack <span>software developer.</span> Boise, Seattle, London</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="#" class="twitter wave-through"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook wave-through"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram wave-through"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin wave-through"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img//portfolio/coolboi-resize.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Fullstack Developer</h3>
+          <p class="fst-italic">
+            Dylan Cade has been programming since 2018, starting with free SQL exercises with SQLBolt. Now, he's found
+            expertise in
+            Javascript, Vue, and even Python, and is embarking into React, Swift, and Django.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>30 August 1995</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel: +1-208-850-1136">+1
+                      (208)
+                      850-1136</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Boise, ID, USA</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a
+                      href="mailto: https://dacade.code@gmail.com">dacade.code@gmail.com</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            I love to code. More than any other ideal in the fields of programming, design, and information
+            architecture, that of <strong>good craft </strong> resonates with me most. I believe in scalable, intuitive,
+            and reusable code, open to the creative visions of the future and necessarily closed to revision. I also
+            believe strongly in personal potential, in insightful leadership, and the responsibility that technology has
+            to noticeably improve lives. My background in History has lead me to believe in the potential for technology
+            and development to bring the best ideas of the past forward. And I believe my work reflects this. <strong><a
+                style="text-decoration: none; color: var(--myLav);" href="#portfolio">Take a look</a></strong>.
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Counts ======= -->
+    <!-- <div class="counts container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Awards</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>End Counts -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Vue 3 <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Python <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">C# <i class="val">55%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MySQL <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="col-6">
+          <div class="d-flex mt-2 fs-6">
+            <p><small>* Disclaimer: These progress bars are meaningless.</small></p>
+          </div>
+        </div> -->
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-stack-line" style="color: #ffbb2c;"></i>
+            <h3>Full Stack Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-cloud-line" style="color: #5578ff;"></i>
+            <h3>Cloud Computing</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-collage-line" style="color: #e80368;"></i>
+            <h3>UX/UI</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-building-2-line" style="color: #e361ff;"></i>
+            <h3>Data Architecture</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-window-line" style="color: #47aeff;"></i>
+            <h3>Web Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-smartphone-line" style="color: #11dbcf;"></i>
+            <h3>Mobile Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-fingerprint-line" style="color: #ffa76e;"></i>
+            <h3>Cybersecurity</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-layout-masonry-line" style="color: #4233ff;"></i>
+            <h3>Planning Theory</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-robot-line" style="color: #b2904f;"></i>
+            <h3>Mechatronics</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-steam-fill" style="color: #b20969;"></i>
+            <h3>Virtual Reality</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-aliens-line" style="color: #ff5828;"></i>
+            <h3>Game Design</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-eye-2-line" style="color: #29cc61;"></i>
+            <h3>Image Recognition</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-microscope-line" style="color: #3fa3fc;"></i>
+            <h3>Natural Sciences</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-pencil-ruler-line" style="color: #ffea28;"></i>
+            <h3>Education</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-government-line" style="color: #b20909;"></i>
+            <h3>Civics</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-ancient-pavilion-fill" style="color: #0a4c21;"></i>
+            <h3>History of Ideas</h3>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+
+    <!-- ======= Testimonials ======= -->
+    <div class="testimonials container">
+
+      <div class="section-title">
+        <h2>Testimonials</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                He surprised me, when he first joined the group, he wasn't that interested in what we were doing but by
+                the end I think he was more invested and committed than any of the rest of us. I think Dylan did great
+                work and had a good vision of what the project should be.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+              <!-- <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Dylan has a strong personality, but he is willing to work with people. He took on the responsibility of
+                scrum master and our morning stand ups were great, the first 3 hours of every day everyone did something
+                important. He also is brave and willing to do things outside the scope of the class. I would love
+                working
+                with him again.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+              <!-- <h3>Sara Wilsson</h3>
+              <h4>Designer</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+          <!-- <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+                labore quem eram duis noster aute amet eram fore quis sint minim.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p> -->
+          <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
+          <!-- <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+          </div>End testimonial item -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Dylan was the primary work drive in our team I would say. Dylan motivated me to work harder and gave me
+                different ideas on how to solve problems. I worked really well with Dylan and we got a lot done.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <!-- <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
+              <!-- <h3>John Larson</h3>
+              <h4>Entrepreneur</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div><!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4>Dylan Cade</h4>
+            <p><em>A skilled and talented developer, electrified by new
+                technologies, ideas, and innovations. Committed to delivering prompt and promised results, to picking up
+                skills quickly, and to solving problems creatively.</em>
+            </p>
+            <p>
+            <ul>
+              <li>Boise, ID, USA</li>
+              <li><a href="tel: +1-208-850-1136">+1
+                  (208)
+                  850-1136</a></li>
+              <li><a href="mailto: https://dacade.code@gmail.com">dacade.code@gmail.com</a></li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Full Stack Software Development</h4>
+            <h5>Mar 2022 - June 2022</h5>
+            <p><em>Boise CodeWorks, Boise, ID</em></p>
+            <p>Over a period of 13 weeks, learned several modern development frameworks ranging from Node.js and MySQL
+              on the back-end, to Vue3 and SCSS on the front-end. Created weekly applications, approaching production
+              grade in the latter half of the course. Worked with other developers as Scrum Master in the creation of a
+              successful capstone project using Agile methodologies.</p>
+          </div>
+          <div class="resume-item">
+            <h4>Python and Django Programming</h4>
+            <h5>Sept 2019 - May 2020</h5>
+            <p><em>Seattle Central Community College, Seattle, WA</em></p>
+            <p>Learned the basics of scripting languages and the beginnings of the Django framework, including its use
+              with PostGreSQL. At this time I also completed a course of self-taught study using the book "How to
+              Automate the Boring Stuff with Python", by Al Sweitgart, and learned implentation of webscrapers and
+              Excel-scripting.
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor of Arts, History</h4>
+            <h5>Sept 2013 - June 2017</h5>
+            <p><em>Seattle University, Seattle, WA</em></p>
+            <p>Completed the year-long History honors program, culminating in one 75 page thesis, and a graduate-level
+              thesis totalling 50 pages. Was an active member of the school's cooking club, and of the Phi Alpha Theta
+              historical society. Performed two study abroad trips to China and Morocco, and studied the local Arabic
+              dialect called '<em>darija</em>'.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Game Capture Artist</h4>
+            <h5>May 2020 - Oct 2020</h5>
+            <p><em>Color Creative, Bellevue, WA </em></p>
+            <p>
+            <ul>
+              <li>Participated in the creation of promotional materials for unreleased video games using a virtual
+                camera</li>
+              <li>Practiced attentiveness and creative intuition in the creative production of shots</li>
+              <li>Worked closely with a team to produce high quality results under deadline</li>
+              <li>Used discretion when working on promotions for as-yet-unannounced games</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Scratch Cook</h4>
+            <h5>Dec 2018 - Mar 2020</h5>
+            <p><em>The Masonry, Seattle, WA</em></p>
+            <p>
+            <ul>
+              <li>Managed inventory, ordering, and prepping from scratch all menu items</li>
+              <li>Performed kitchen service serving up to 1,000 people a night, or conversely high quality
+                tasting-dinners, using only a woodfire oven and a camp stove</li>
+              <li>Entertained and advised customers on selections for food or beer from the open kitchen</li>
+              <li>Got my hands dirty</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Speakers' Representative</h4>
+            <h5>Nov 2015 - Aug 2016</h5>
+            <p><em>The Holocaust Center for Humanity, Seattle, WA</em></p>
+            <p>
+            <ul>
+              <li>Researched, vetted, and organized the stories and documents of Holocaust survivors and their
+                descendents</li>
+              <li>Created museum-quality presentations and speeches for said speakers to use in the education of the
+                Seattle public, on site and in schools</li>
+              <li>Supplied personal time to volunteer for events and create visual aids to assist with fundraising and
+                development</li>
+              <li>Works and documents processed have been acknowledged by the United States Holocaust Memorial Musuem in
+                DC</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <!-- <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/allspice.png" class="img-fluid" alt="OnTrak cover image">
+            <div class="portfolio-info">
+              <h4>AllSpice</h4>
+              <div class="portfolio-links">
+                <a href="https://allspice.herokuapp.com/#/" target="_blank"><i class="bx bx-link"></i></a>
+                <!-- data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 1" -->
+                <a href="allspice-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-plus"></i></a>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/ontrack.png" class="img-fluid" alt="OnTrak cover image">
+            <div class="portfolio-info">
+              <h4>OnTrak</h4>
+              <div class="portfolio-links">
+                <a href="https://ontrak-capstone.herokuapp.com/" target="_blank"><i class="bx bx-link"></i></a>
+                <!-- data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3" -->
+                <a href="ontrak-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
-  </div>
+  </section><!-- End Portfolio Section -->
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form> -->
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- <div class="credits"> -->
+  <!-- All the links in the footer should remain intact. -->
+  <!-- You can delete the links only if you purchased the pro version. -->
+  <!-- Licensing information: https://bootstrapmade.com/license/ -->
+  <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  </div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
