@@ -7,7 +7,7 @@ For the moment I'm still pretty new to the world of programming, but already I c
 > Design 🎨  
 > JavaScript, Python, and C# 💻  
 
-When Dylan isn't programming, you can find him playing piano, swimming in the Boise river, or eating a block of cheese the size of a car battery while seated in a recliner with a fridge in the side.
+When Dylan isn't programming, you can find him playing piano, swimming in the Boise river, or sitting in a recliner with a fridge in the side, eating a block of cheese the size of a car battery.
 
 Professionally, I strive for perfection. I am fascinated with good mentorship and excellent planning and design. Just as I have found a niche in the world of programming, I hope to further refine my place as a pioneer in innovation, design/data architecture, and personal leadership.
 
