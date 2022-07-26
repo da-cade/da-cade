@@ -721,6 +721,33 @@ section .container {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+
+.grid {
+  display: flex;
+  padding: .5rem .5rem 0 .5rem;
+}
+
+.grid-col {
+  flex-grow: 1;
+}
+
+.grid-col:nth-child(2), .grid-col:nth-child(3) { display: none }
+
+/* 3 columns at medium size */
+@media ( min-width: 768px ) {
+  .grid-col:nth-child(2) { display: block; } /* show column 2 */
+}
+
+/* 4 columns at large size */
+@media ( min-width: 1080px ) {
+  .grid-col:nth-child(3) { display: block; } /* show column 3 */
+}
+
+.grid-item {
+  margin: .5rem .5rem 1rem .5rem;
+  text-align: center;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -916,17 +943,30 @@ section .container {
 }
 
 .portfolio-details .swiper-slide{
-  height: 50vh;
+  height: 70vh;
 }
 
-/* .portfolio-details .swiper-slide > img{
-  object-position: center;
-  object-fit: cover;
-} */
+.portfolio-details .portfolio-info a{
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio-details .portfolio-info a:hover{
+  color: rgb(255, 255, 255);
+  background: radial-gradient(circle, var(--myBlue) 0%, var(--myPink) 77%, var(--myMagenta) 100%);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+/* .contact * {
+  transition: ease-in-out .3s;
+} */
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -957,6 +997,20 @@ section .container {
   font-size: 14px;
   margin: 0 0 0 68px;
 }
+
+.info-box a{
+  color: white;
+  text-decoration: none;
+}
+
+.info-box a:hover{
+  color: rgb(255, 255, 255);
+  background: radial-gradient(circle, var(--myBlue) 0%, var(--myPink) 77%, var(--myMagenta) 100%);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
@@ -970,7 +1024,11 @@ section .container {
   transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-  color: var(--myLav);
+  color: rgb(255, 255, 255);
+  background: radial-gradient(circle, var(--myBlue) 0%, var(--myPink) 77%, var(--myMagenta) 100%);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .contact .php-email-form {
   padding: 30px;
