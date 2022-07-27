@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  /*  */
   transition: ease-in-out 0.15s;
 }
 #header h1 a, #header h1 a:hover {
@@ -718,37 +717,34 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.masonryContainer{
+  columns: 3 200px;
+  column-gap: 1rem;
+  width: 84vw;
+  min-height: 50vh;
+}
+
+.masonryContainer div{
+  -webkit-column-break-inside: avoid;
+  width: 150px;
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
-.grid {
-  display: flex;
-  padding: .5rem .5rem 0 .5rem;
+.portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 40vh;
 }
 
-.grid-col {
-  flex-grow: 1;
-}
-
-.grid-col:nth-child(2), .grid-col:nth-child(3) { display: none }
-
-/* 3 columns at medium size */
-@media ( min-width: 768px ) {
-  .grid-col:nth-child(2) { display: block; } /* show column 2 */
-}
-
-/* 4 columns at large size */
-@media ( min-width: 1080px ) {
-  .grid-col:nth-child(3) { display: block; } /* show column 3 */
-}
-
-.grid-item {
-  margin: .5rem .5rem 1rem .5rem;
-  text-align: center;
-}
-
-.portfolio #portfolio-flters {
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -775,7 +771,8 @@ section .container {
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
-}
+} */
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;

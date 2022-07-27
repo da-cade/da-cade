@@ -183,13 +183,6 @@
     }
   });
 
-  /**
-   * Portfolio masonry
-   */
-  var colc = new Colcade('.grid', {
-    columns: '.grid-col',
-    items: '.grid-item'
-  });
 
   /**
    * Porfolio isotope and filter
@@ -231,7 +224,7 @@
    */
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
-    width: '90vh',
+    width: '90%',
     height: '90vh'
   });
 
