@@ -717,40 +717,11 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
 
-.grid{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.grid-col {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.grid-col--2, .grid-col--3 { display: none }
-
-/* 2 columns at medium size */
-@media ( min-width: 768px ) {
-  .grid-col--2 { display: block; } /* show column 2 */
-}
-
-/* 3 columns at large size */
-@media ( min-width: 1080px ) {
-  .grid-col--3 { display: block; } /* show column 3 */
-}
-
-.grid-item {
-  text-align: center;
-  flex-grow: 1;
-  margin: 0 1rem 1rem 0;
+.portfolio-wrap img{
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* .portfolio #portfolio-flters {
@@ -789,6 +760,24 @@ section .container {
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
 }
+
+.keepr{
+  bottom: 20px;
+}
+
+.planit{
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .keepr{
+    bottom: 0px
+  }
+  .planit{
+    padding-top: 1rem;
+  }
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -946,10 +935,6 @@ section .container {
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
-}
-
-.portfolio-details .swiper-slide{
-  height: 70vh;
 }
 
 .portfolio-details .portfolio-info a{
