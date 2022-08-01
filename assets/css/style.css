@@ -750,6 +750,7 @@ section .container {
 .grid-item {
   text-align: center;
   flex-grow: 1;
+  margin: 0 1rem 1rem 0;
 }
 
 /* .portfolio #portfolio-flters {
